@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- VSC에서는 느낌표를 입력하면 기본 HTML 틀이 출력된다-->
+<html lang="en">
+  <head>
+    <!--웹 폰트를 사용할 때는 link보다 import 형식을 사용하는 것을 권장한다.-->
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <!-- BEM(Block Element Modifier): CSS에 가독성을 주는 표현법 
+            1. 자식 엘리먼트를 나타내는 표현법(부모엘리먼트 이름__자식엘리먼트 이름)
+            2. 속성을 나타내는 표현법(엘리먼트명--속성값)
+            * 꿀팁 - 모든 이름은 class 명이다. 뭐가 id이고 name이고 class인지 헷갈리니까
+              개발자들 사이에서 이미 모든 엘리먼트는 class명을 사용하도록 통일하였다. 
+        -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </svg>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>150%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+      <p class="welcome-header__text">If you have a Kokoa Account,<br>log in with your email or phone number.</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number">
+      <input name="password" type="password" placeholder="Password">
+      <input type="submit" value="Log In"/>
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <div id="splash-screen">
+      <i class="fas fa-comment fa-lg"></i>
+     </div>
+     <div class="no-mobile">
+      <div>브라우저의 크기를 줄여주세요.<br></div>
+      <div><br>Please reduce your browser resolution.</div>
+    </div>
+
+    <div class="no-landscape">
+      <div>가로모드에서 세로모드로 화면을 바꿔주세요.<br></div>
+      <div><br>Please change to portrait mode.</div>
+    </div>
+    <!-- script태그는 body태그를 닫기 직전인 마지막 부분에 삽입되어야 한다.-->
+    <!--아래 삽입된 script코드는 font-awesome-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

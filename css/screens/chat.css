@@ -1,0 +1,243 @@
+.chat-screen .status-bar {
+  z-index: 2;
+}
+
+.chat-screen .status-bar,
+.chat-screen .alt-header {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(160, 185, 201);
+  box-sizing: border-box;
+}
+
+.chat-screen {
+  background-color: rgb(160, 185, 201);
+  /* overflow-y: visible; */
+}
+
+.chat-screen .alt-header {
+  top: 4vw;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes inboundMessage {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes outboundMessage {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  margin-top: 23vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  margin-top: 3vw;
+  padding: 1.5vw 3vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 2.5vw;
+  margin-bottom: 6vw;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 6vw;
+}
+
+.message-row--inbound {
+  animation: inboundMessage 0.5s linear forwards;
+}
+
+.message-row img {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  display: block;
+  margin-bottom: 1.5vw;
+}
+
+.message__bubble {
+  background-color: whitesmoke;
+  padding: 2.5vw 3vw;
+  border-radius: 12px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-size: 3.5vw;
+}
+
+.message__box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__author,
+.message__time {
+  opacity: 0.7;
+  font-size: 3vw;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: outboundMessage 0.5s linear forwards;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.message-row--own .message__box {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 7vw;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply i {
+  font-size: 4vw;
+  opacity: 0.8;
+}
+
+.reply input {
+  padding: 2vw;
+  width: 95%;
+  border: var(--border-line);
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.reply button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reply__column:last-child > i,
+.reply button {
+  position: absolute;
+  right: 5vw;
+  top: 0.5vw;
+}
+
+.reply__column:last-child > i {
+  right: 13vw;
+  top: 2vw;
+}
+
+.reply__column .fa-plus-square {
+  position: relative;
+  right: 0vw;
+  top: 2.5vw;
+}
+.reply__column {
+  height: 8vw;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 1;
+  font-size: 3vw;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-grin-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-grin-wink,
+.reply:focus-within button {
+  opacity: 0;
+  /* focus-within: reply 내부에 어떤 엘리먼트가 focus되었을 때*/
+}
+
+.reply input:focus {
+  width: 90vw;
+  transform: translateX(-10%) translateY(-50vw);
+}
+
+.reply:focus-within {
+  transform: translateY(50vw);
+}
+
+.chats-main .user-component:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

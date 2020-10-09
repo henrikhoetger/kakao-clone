@@ -1,0 +1,41 @@
+.no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+}
+
+.no-landscape {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .no-mobile {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) {
+  .no-landscape {
+    display: none;
+  }
+}

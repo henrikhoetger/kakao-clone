@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css?after">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ friend  - Kokoa Talk</title>
+  </head>
+  <body class="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </svg>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>150%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+</div>
+<header class="alt-header">
+    <div class="alt-header__column">
+        <a href="chats.html">
+        <i class="fas fa-angle-left fa-2x"></i>
+    </a>
+    </div>
+    <div class="alt-header__column">
+        <h1 class="alt-header__title">Joon Park</h1>
+    </div>
+    <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+</header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Friday, Sep 18, 2020
+      </div>
+      <div class="message-row message-row--inbound">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcZ4eul%2FbtqI065dmCU%2FCrea6pbGouUZjnztU43kkk%2Fimg.png" />
+        <div class="message-row__content">
+          <span class="message__author">Joon Park</span>
+          <div class="message__box">
+            <span class="message__bubble">Hey! Raphy, wanna grab a beer?</span>
+            <span class="message__time">21:29</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__box">
+            <span class="message__bubble">Sure! Where ru now?</span>
+            <span class="message__time">21:32</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Type a message..."/>
+        <i class="far fa-grin-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div class="no-mobile">
+      <div>브라우저의 크기를 줄여주세요.<br></div>
+      <div><br>Please reduce your browser resolution.</div>
+    </div>
+
+    <div class="no-landscape">
+      <div>가로모드에서 세로모드로 화면을 바꿔주세요.<br></div>
+      <div><br>Please change to portrait mode.</div>
+    </div>
+   
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous">
+    </script>
+     <!-- 새로 고침 시 화면이 위로 올라가는 것을 막기 위해 스크롤 위치 복원 안함을 설정 
+        manual이라는 속성값 대신 auto를 기입하면 스크롤 위치를 복원함 -->
+    <script>history.scrollRestoration = "manual"</script>
+  </body>
+</html>
