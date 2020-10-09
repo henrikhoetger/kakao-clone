@@ -29,4 +29,4 @@
 
 #### d) 프로젝트 바로가기 (Project Link)
 
-- 프로젝트 링크 / Project Link: https://akaraphael.github.io/kokoa-clone/
+- 프로젝트 링크 / Project Link: https://akaraphael.github.io/kakao-clone/
