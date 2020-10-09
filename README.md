@@ -11,19 +11,19 @@
 
 #### a) 시작 페이지, 로그인 페이지 - 로그인 버튼을 누르면 다음 페이지로 이동합니다. <br> Splash Screen(opening screen) and Login page - please just click log-in button to get in.
 
-<img src="./screenshots/splashscreen.png" width=200px/> <img src="./screenshots/login.png" width=200px/>
+<img src="/screenshots/splashscreen.png" width=200px/> <img src="/screenshots/login.png" width=200px/>
 
 <br>
 
 #### b) 친구목록, 채팅 목록, 채팅 페이지 <br> friends list, chats list, and chat screen
 
-<img src="./screenshots/friends.png" width=200px/> <img src="./screenshots/chats.png" width=200px/> <img src="./screenshots/conversation.png" width=200px/>
+<img src="/screenshots/friends.png" width=200px/> <img src="/screenshots/chats.png" width=200px/> <img src="/screenshots/conversation.png" width=200px/>
 
 <br>
 
 #### c) 찾기, 더보기, 환경설정 페이지 <br> find, more, and settings page
 
-<img src="./screenshots/find.png" width=200px/> <img src="./screenshots/more.png" width=200px/> <img src="./screenshots/settings.png" width=200px/>
+<img src="/screenshots/find.png" width=200px/> <img src="/screenshots/more.png" width=200px/> <img src="/screenshots/settings.png" width=200px/>
 
 <br>
 
