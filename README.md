@@ -24,9 +24,3 @@
 #### c) 찾기, 더보기, 환경설정 페이지 <br> find, more, and settings page
 
 <img src="/screenshots/find.png" width=200px/> <img src="/screenshots/more.png" width=200px/> <img src="/screenshots/settings.png" width=200px/>
-
-<br>
-
-#### d) 프로젝트 바로가기 (Project Link)
-
-- 프로젝트 링크 / Project Link: https://akaraphael.github.io/kakao-clone/
