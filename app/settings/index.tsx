@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ChevronLeft, Search, Volume2, Flask, GitBranch, Lock, Bell, Loader, Palette, MoreHorizontal, HelpCircle } from 'lucide-react-native';
+import { ChevronLeft, Search, Volume2, FlaskRound as Flask, GitBranch, Lock, Bell, Loader, Palette, MoreHorizontal, HelpCircle } from 'lucide-react-native';
 import StatusBar from '../../components/StatusBar';
 
 export default function SettingsScreen() {

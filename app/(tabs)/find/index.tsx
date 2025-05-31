@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import { QrCode, AddressBook, Fingerprint, Mail, ChevronRight, Heart } from 'lucide-react-native';
+import { QrCode, Book as AddressBook, Fingerprint, Mail, ChevronRight, Heart } from 'lucide-react-native';
 import StatusBar from '../../../components/StatusBar';
 import ScreenHeader from '../../../components/ScreenHeader';
 
